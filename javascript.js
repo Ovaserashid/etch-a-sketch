@@ -1,6 +1,23 @@
 
 const container = document.querySelector('#container');
 let grid = [];
+function userInputLayout(){
+    const inputBox = document.createElement('div');
+    const inputBoxChildDiv = document.createElement('div');
+    const button = document.createElement('button');
+    const inputField = document.createElement('form');
+    const headingBox = document.createElement('h1');
+    headingBox.textContent = 'Enter the grid value';
+    inputBox.appendChild(headingBox);
+    inputBoxChildDiv.style.display = "flex";
+    button.textContent = 'Go';
+    inputField.appendChild(inputBoxChildDiv);
+    inputField.appendChild(button);
+    inputBox.appendChild(inputField);
+}
+function getUserInput(){
+    
+}
 function styleGrid(){
     grid.style.width = "16px";
     grid.style.height = "16px";
@@ -16,5 +33,6 @@ function appendGrid(){
         container.appendChild(grid[i]);
     }
 }
-// styleGrid();
+userInputLayout();
+getUserInput();
 appendGrid();
