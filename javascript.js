@@ -48,7 +48,7 @@ function appendGrid(input){
         grid[i].setAttribute('class','grid'+i);
         grid[i].style.width = 512/input+"px";
         grid[i].style.height = 512/input+"px";
-        grid[i].style.border = "1px solid black";
+        grid[i].style.border = "1px solid lightgrey";
         gridContainer.appendChild(grid[i]);
         grid[i].addEventListener('mouseenter', (e)=>{
             if(radioRgbButton.checked){
