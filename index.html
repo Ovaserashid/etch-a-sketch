@@ -9,7 +9,28 @@
 </head>
 <body>
     <div class="maincontainer">
-        <div id = "container"></div>
-    </div>    
+        <div id = "container">
+            <div class="gridbox"></div>
+            <div class="inputbox">
+                <div class="inputsubbox">
+                    <p style="font-size: 20px;">Enter the grid value (1-100): </p>
+                    <input type="number" class="inputvalue">
+                    <button class="btn">Go</button>
+                </div>
+                <p style = "font-style: italic; font-size: 14px; color: lightslategray;">Note: If you enter a grid value of n you will get nxn grid</p>
+            </div>
+            <div class="radiodiv">
+                <h4>Select the mode</h4>
+                <div class="radio">
+                    <div>
+                        <input type="radio" class="bw" checked="checked"> Grayscale
+                    </div>
+                    <div>
+                        <input type="radio" class="rgb">RGB Mode
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
